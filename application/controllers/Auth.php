@@ -7,7 +7,7 @@ class Auth extends CI_Controller {
 		$this->load->library('form_validation');
 		$this->load->library('address');
 		$this->load->library('restclient');
-		
+		$this->load->library('pagination');
 		// $this->load->helper(array('form', 'validation'));
 	}
 
