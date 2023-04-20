@@ -156,19 +156,23 @@
                                     <tr>
                                     <th scope="col">No</th>
                                     <th scope="col">Nama</th>
-                                    <th scope="col">Username</th>
-                                    <th scope="col">Unit</th>
+                                    <th scope="col">Alamat</th>
+                                    <th scope="col">Tanggal Lahir</th>
+                                    <th scope="col">Jenis Kelamin</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
-                                    foreach($datauser as $data):?>
-                                    <tr>
+                                    // echo '<pre>';
+                                    // print_r($namaPengguna); die();
+                                    foreach($namaPengguna as $data):?>
+                                     <tr> 
                                         <th scope="row"> <?=++$start;?></th>
-                                        <td><?= $data['name'] ?></td>
-                                        <td><?= $data['username'] ?></td>
-                                        <td><?= $data['unit'] ?></td>
-                                    </tr>
+                                        <td><?= $data->nama?></td>
+                                        <td><?= $data->alamat ?></td>
+                                        <td><?= $data->tanggalLahir ?></td>
+                                        <td><?= $data->jk?></td>
+                                    </tr> 
                                     <?php endforeach ?>
                                 </tbody>
                             </table>

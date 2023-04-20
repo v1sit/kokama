@@ -4,7 +4,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class User extends CI_Controller {
     
         public function index() {
-            
+
+        $result = $this->restclient->getKokama();
+		$file = file_get_contents($result);
+		$dt = json_decode($file);
+        
+        $data ['namaPengguna'] = $dt; 
+        
+        // echo '<pre>';
+        // print_r($dt); die();
+
         $this->load->library('pagination');
 
          // ambil data pencariannya
@@ -27,7 +36,7 @@ class User extends CI_Controller {
 
         //config
         $config['total_rows'] = $this->db->count_all_results();
-        $config['per_page'] = 3;
+        $config['per_page'] = 2;
         $data['total_rows'] =  $config['total_rows'];
 
         //  var_dump($config['total_rows']); die;

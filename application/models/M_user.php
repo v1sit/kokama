@@ -19,4 +19,6 @@ class M_user extends CI_Model {
     public function countAllDataPengguna() {
         return $this->db->get('userweb')->num_rows();
     }
+
+    
 }

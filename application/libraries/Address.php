@@ -16,4 +16,8 @@ class Address{
         return $lokal; 
         }
 
+    function getKokama() {
+        $lokal = 'http://192.168.27.55:8384/Kokama/';
+        return $lokal;
+    }    
 }

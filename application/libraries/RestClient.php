@@ -34,6 +34,14 @@ class RestClient {
     $get_unit = 'getAllUnit';
     return $getUnit.$get_unit;
   }
+
+  function getKokama() {
+    $this->address();
+    $getKokama=$this->CI->address->getKokama();
+    $getNama = 'getDataPenggunaByNama/joko';
+    return $getKokama. $getNama;
+  }
+
 }
 
   
