@@ -42,6 +42,19 @@ class RestClient {
     return $getKokama. $getNama;
   }
 
+  function getAllBarang() {
+    $this->address();
+    $getAllBarang=$this->CI->address->getAllBarang();
+    $getBarang = 'getAllBarang';
+    return $getAllBarang. $getBarang;
+  }
+  function tambahStokBarang() {
+    $this->address();
+    $tambahStokBarang=$this->CI->address->tambahStokBarang();
+    $tambahKeranjang = 'getAllBarang';
+    return $tambahStokBarang. $tambahKeranjang;
+  }
+
 }
 
   

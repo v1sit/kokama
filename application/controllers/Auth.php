@@ -47,13 +47,13 @@ class Auth extends CI_Controller {
         $userweb = json_decode($response);
 		
 		if (!empty($userweb->idUserWeb)) {
-			//punya akun
+			//cek akun
 					$data = [
 							'username' => $userweb->userName['username']
 							];
 
 			$this->session->set_userdata($data);
-			redirect('user');
+			redirect('user/index');
 			
 		} else {
 			$this->session->set_flashdata('message', '<div class="alert 

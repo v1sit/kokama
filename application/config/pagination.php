@@ -1,6 +1,6 @@
 <?php 
 //config
-        $config['base_url'] = 'http://192.168.27.52:81/kokama/user/index';
+        $config['base_url'] = 'http://192.168.27.52:81/kokama-api/user/index';
     
         $config['num_links'] = 5;
         

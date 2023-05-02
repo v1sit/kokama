@@ -47,6 +47,6 @@ class User extends CI_Controller {
         $data['start'] = $this->uri->segment(3);
         $data['datauser'] = $this->M_user->getdataUser($config['per_page'], $data['start'], $data['keyword']);
         $this->session->userdata('username()]');
-        $this->load->view('user/index', $data);
+        $this->load->view('user/dashboard', $data);
     }
 }
